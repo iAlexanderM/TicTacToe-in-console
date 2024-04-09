@@ -1,9 +1,8 @@
-﻿const char NumberX = 'X';
-const char Number0 = '0';
+﻿const char PlayerCross = 'X';
+const char PlayerCircle = '0';
 const string ExitCommand = "exit";
 const char EmptyPosition = '-';
-
-int fieldLength = 3;
+const int fieldSize = 3;
 
 bool isIdentification = true;
 bool isGaming = true;
@@ -20,7 +19,7 @@ string firstPlayerSymbol = Console.ReadLine();
 
 while (isIdentification)
 {
-    if (firstPlayerSymbol.ToUpper() != Convert.ToString(NumberX) && firstPlayerSymbol.ToUpper() != Convert.ToString(Number0))
+    if (firstPlayerSymbol.ToUpper() != Convert.ToString(PlayerCross) && firstPlayerSymbol.ToUpper() != Convert.ToString(PlayerCircle))
     {
         ErrorInputMessage();
 
@@ -68,14 +67,14 @@ while (isGaming)
     if (isDraw == true)
         return;
 
-    currentPlayerSymbol = currentPlayerSymbol == NumberX ? Number0 : NumberX;
+    currentPlayerSymbol = currentPlayerSymbol == PlayerCross ? PlayerCircle : PlayerCross;
 }
 
 void Draw()
 {
-    for (int i = 0; i < fieldLength; i++)
+    for (int i = 0; i < fieldSize; i++)
     {
-        for (int j = 0; j < fieldLength; j++)
+        for (int j = 0; j < fieldSize; j++)
         {
             Console.Write(field[i, j]);
         }
@@ -90,7 +89,7 @@ void Draw()
     {
         var position = Console.ReadLine();
 
-        if(CheckCurrectPosition(position))
+        if(CheckValidityEnteredPosition(position))
         {
             var positionOne = int.Parse(position[0].ToString());
             var positionTwo = int.Parse(position[1].ToString());
@@ -108,7 +107,7 @@ void Draw()
     }
 }
 
-bool CheckCurrectPosition(string position)
+bool CheckValidityEnteredPosition(string position)
 {
     int positionY, positionX;
 
@@ -118,8 +117,7 @@ bool CheckCurrectPosition(string position)
     if (!int.TryParse(position[0].ToString(), out positionY) || !int.TryParse(position[1].ToString(), out positionX))
         return false;
 
-    else if (positionY != 0 && positionY != 1 && positionY != 2 
-          || positionX != 0 && positionX != 1 && positionX != 2)
+    if (positionY is not >= 0 and <= 2 || positionX is not >= 0 and <= 2)
         return false;
 
     return true;
@@ -165,9 +163,9 @@ bool CheckWin(char symbol)
 
 bool CheckDraw()
 {
-    for(int i = 0; i < fieldLength; i++)
+    for(int i = 0; i < fieldSize; i++)
     {
-        for(int j = 0; j < fieldLength; j++)
+        for(int j = 0; j < fieldSize; j++)
         {
             if (field[i, j] == EmptyPosition)
                 return false;
