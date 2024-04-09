@@ -1,0 +1,15 @@
+D:\github\tictactoe\TicTacToe-in-console\TicTacToe(no classes)\bin\Debug\net8.0\TicTacToe(no classes).exe
+D:\github\tictactoe\TicTacToe-in-console\TicTacToe(no classes)\bin\Debug\net8.0\TicTacToe(no classes).deps.json
+D:\github\tictactoe\TicTacToe-in-console\TicTacToe(no classes)\bin\Debug\net8.0\TicTacToe(no classes).runtimeconfig.json
+D:\github\tictactoe\TicTacToe-in-console\TicTacToe(no classes)\bin\Debug\net8.0\TicTacToe(no classes).dll
+D:\github\tictactoe\TicTacToe-in-console\TicTacToe(no classes)\bin\Debug\net8.0\TicTacToe(no classes).pdb
+D:\github\tictactoe\TicTacToe-in-console\TicTacToe(no classes)\obj\Debug\net8.0\TicTacToe(no classes).GeneratedMSBuildEditorConfig.editorconfig
+D:\github\tictactoe\TicTacToe-in-console\TicTacToe(no classes)\obj\Debug\net8.0\TicTacToe(no classes).AssemblyInfoInputs.cache
+D:\github\tictactoe\TicTacToe-in-console\TicTacToe(no classes)\obj\Debug\net8.0\TicTacToe(no classes).AssemblyInfo.cs
+D:\github\tictactoe\TicTacToe-in-console\TicTacToe(no classes)\obj\Debug\net8.0\TicTacToe(no classes).csproj.CoreCompileInputs.cache
+D:\github\tictactoe\TicTacToe-in-console\TicTacToe(no classes)\obj\Debug\net8.0\TicTacToe(no classes).sourcelink.json
+D:\github\tictactoe\TicTacToe-in-console\TicTacToe(no classes)\obj\Debug\net8.0\TicTacToe(no classes).dll
+D:\github\tictactoe\TicTacToe-in-console\TicTacToe(no classes)\obj\Debug\net8.0\refint\TicTacToe(no classes).dll
+D:\github\tictactoe\TicTacToe-in-console\TicTacToe(no classes)\obj\Debug\net8.0\TicTacToe(no classes).pdb
+D:\github\tictactoe\TicTacToe-in-console\TicTacToe(no classes)\obj\Debug\net8.0\TicTacToe(no classes).genruntimeconfig.cache
+D:\github\tictactoe\TicTacToe-in-console\TicTacToe(no classes)\obj\Debug\net8.0\ref\TicTacToe(no classes).dll
